@@ -1,0 +1,108 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: rgb(186, 140, 223);
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  body.dark {
+    background: #121212;
+    color: #f0f0f0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #eef0ef;
+  }
+  
+  .navbar nav a {
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #fae698ef;
+  }
+  
+  .socials a {
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: #0077b5;
+  }
+  
+  section {
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .project-card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+  }
+  
+  .skills-list span {
+    display: inline-block;
+    margin: 0.5rem;
+    background: #ddd;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+  }
+  
+  form {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  form input, form textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    padding: 0.75rem;
+    background: #0077b5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #eee;
+  }
+  
+  /* Dark mode */
+  body.dark .navbar,
+  body.dark footer {
+    background: #1e1e1e;
+  }
+  
+  body.dark .project-card {
+    background: #333;
+  }
+  
+  body.dark .skills-list span {
+    background: #555;
+  }
+  
